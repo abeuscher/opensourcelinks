@@ -67,7 +67,8 @@ const themeOptions: ThemeOptions = {
     MuiAppBar: {
       styleOverrides: {
         root: {
-          background: 'linear-gradient(to top,#b7e9ec, #7eb7e0)',
+          background: 'black',
+          color:'white',
           borderBottom: '1px solid rgba(44, 110, 156, 0.12)',
         },
       },

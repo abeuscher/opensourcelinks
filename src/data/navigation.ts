@@ -1,12 +1,7 @@
 import {
-  Book,
-  Chat,
   Facebook,
-  Home,
   Instagram,
-  Link,
   LinkedIn,
-  Logout,
   MusicVideo,
   PhotoCamera,
   Pinterest,
@@ -89,5 +84,5 @@ export const mainNavItems: NavItem[] = [
 export const footerNavItems: NavItem[] = [
   { text: 'About', url: '/about' },
   { text: 'Privacy', url: '/privacy' },
-  { text: 'GitHub', url: 'https://github.com/yourusername/escape-the-oligarchy' },
+  { text: 'GitHub', url: 'https://github.com/abeuscher/opensourcelinks' },
 ];

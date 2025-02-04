@@ -22,8 +22,8 @@ import React, { useState } from 'react';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Link from 'next/link';
 import MenuIcon from '@mui/icons-material/Menu';
-import type { NavItem } from '../../types/navigation';
 import { mainNavItems } from '../../data/navigation';
+import { siteData } from '../../data/sitedata';
 import { useRouter } from 'next/router';
 
 const Header = () => {
@@ -194,7 +194,7 @@ const Header = () => {
               },
             }}
           >
-            Escape the Oligarchy
+            {siteData.title}
           </Typography>
         </Link>
 

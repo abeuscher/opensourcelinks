@@ -6,10 +6,9 @@ import { GitHub } from '@mui/icons-material';
 import Link from 'next/link';
 import React from 'react';
 import { footerNavItems } from '../../data/navigation';
+import { siteData } from '@/data/sitedata';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
     <Box
       component="footer"
@@ -25,10 +24,10 @@ const Footer = () => {
         <Grid container spacing={4} justifyContent="space-between">
           <Grid item xs={12} sm={6}>
             <Typography variant="h5" color="text.contrastText" gutterBottom>
-              Escape the Oligarchy
+              {siteData.title}
             </Typography>
             <Typography variant="h6" color="text.contrastText">
-              Privacy-focused social media migration tools
+              {siteData.tagline}
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -76,8 +75,13 @@ const Footer = () => {
             </Box>
           </Grid>
         </Grid>
-        <Typography variant="body2" color="text.secondary" align="center" sx={{ mt: 2 }}>
-          © {currentYear} Escape the Oligarchy. No rights reserved.
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          align="center"
+          sx={{ mt: 2, color: '#ccc' }}
+        >
+          {siteData.footer}
         </Typography>
       </Container>
     </Box>
